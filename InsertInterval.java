@@ -1,6 +1,7 @@
 class Solution {
     public int[][] insert(int[][] intervals, int[] newInterval) {
         LinkedList<int[]>l=new LinkedList<>();
+        //insert to list
         int[] toAdd=newInterval;
         for (int[] i:intervals){
             if (toAdd[1]<i[0]){
